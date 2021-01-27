@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Albert and Simon's Adventure</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+   
+  </head>
+  
+  <body>
+  
+	<div id="gameBoard">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+	</div>
+	
+	<div id="lightbox" class="hidden"></div>
+	
+	<div id="positionMessage">
+		<div id="boundaryMessage" class="unhidden">
+			<button id="startGame" onclick="startGame()">Start</button>
+			<h1 class="titletext" id="message">Pick Mushroom with Little Red</h1>
+			<p class="titletext" id="message2">In this game, you will pick up mushromms with little red. There're a moving yellow monsters and many toxic ants, rivers and bushes. First you need to get the basket so that you can pass through the money house and the sleeping house. And then, pick the mushroom, you'll enter the next level...
+			<br><br>
+			Now click the 'Start' button and strat the game.
+			</p>
+		</div>
+		
+		<div class="hidden" id="gameOver">
+		<h1 class="titletext" id="message">Game Over</h1>
+		<h2 class="titletext" id="message">Play again or not?</h2>
+		<button id="playAgain" onclick="playAgain()">Play Again</button>
+		
+		</div>
+		
+	</div>
+
+
+	
+	<div class="message" id="lose">You Lose</div>
+	<div class="message" id="levelup">Next level...</div>
+	
+	<script src="game.js"></script>
+  </body>
+  
+</html>
+
